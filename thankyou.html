@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thank You - DeepQA</title>
+  <meta name="description" content="Thank you for contacting Deepak Soni. Your message has been received successfully.">
+  <link rel="stylesheet" href="style.css?v=1.1">
+</head>
+
+<body>
+  <!-- WebGL Fluid Simulation Background -->
+  <div class="canvas-container">
+    <canvas id="fluid-canvas"></canvas>
+  </div>
+
+  <!-- Premium Sticky Header Nav -->
+  <header id="header">
+    <div class="container header-container">
+      <a href="index.html" class="logo">
+        <img src="logo.png" alt="Deep QA Logo"
+          style="height: 60px; width: auto; max-width: 240px; object-fit: contain;">
+      </a>
+
+      <!-- Navigation Links -->
+      <nav class="alkemy-nav" id="alkemy-primary-nav" aria-label="Primary Navigation">
+        <a href="index.html" class="alkemy-nav-link">Home</a>
+        <a href="index.html#about-me" class="alkemy-nav-link">About Me</a>
+        <a href="index.html#features" class="alkemy-nav-link">Top Tools</a>
+        <a href="index.html#portfolio" class="alkemy-nav-link">View Portfolio</a>
+        <a href="index.html#testimonials" class="alkemy-nav-link">Testimonials</a>
+      </nav>
+
+      <!-- Header CTAs / Actions -->
+      <div class="header-actions">
+        <button type="button" class="btn-primary" id="btn-join-alkemy"> <a href="index.html#contact">Get in Touch</a></button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="thankyou-section">
+      <div class="thankyou-container">
+        <!-- SVG Animated Checkmark -->
+        <div class="success-icon-container">
+          <div class="success-icon-bg">
+            <svg class="success-svg" viewBox="0 0 52 52">
+              <circle class="success-circle" cx="26" cy="26" r="25" fill="none"/>
+              <path class="success-check" fill="none" d="M14.1 27.2l7.1 7.2 16.7-16.8"/>
+            </svg>
+          </div>
+        </div>
+
+        <h1 class="thankyou-title">Thank You!</h1>
+        
+        <div class="thankyou-content">
+          <p class="thankyou-lead">Your message has been received successfully.</p>
+          <p>Thank you for contacting Deepak Soni.</p>
+          <p>I'll review your requirements and get back to you within 1 - 2 days.</p>
+        </div>
+
+        <div class="thankyou-actions">
+          <a href="index.html" class="btn btn-primary">Back to Home</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==================== Footer ==================== -->
+  <footer>
+    <div class="container">
+      <div class="footer-bottom">
+        <p>© 2026 DeepQA. Designed & Developed by Deepak Soni. All Rights Reserved.</p>
+        <div class="footer-bottom-links">
+          <a href="terms.html">Terms of Use</a>
+          <a href="privacy.html">Privacy Policy</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==================== Back to Top Button ==================== -->
+  <button id="backToTop" class="back-to-top-btn" aria-label="Back to Top">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"
+      stroke-linecap="round" stroke-linejoin="round">
+      <polyline points="18 15 12 9 6 15"></polyline>
+    </svg>
+  </button>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="fluid.js"></script>
+  <script src="script.js?v=1.4"></script>
+</body>
+
+</html>
