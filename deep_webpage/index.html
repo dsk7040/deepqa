@@ -638,13 +638,24 @@ and automated testing across diverse applications, including web, desktop, and m
 
           <!-- Contact Form Glassmorphic Card -->
           <div class="contact-form-card">
-            <form id="contactForm"
-              onsubmit="event.preventDefault(); alert('Thank you for reaching out! We will contact you shortly.'); this.reset();">
+                        <form id="contactForm" name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+
+              <!-- Required for Netlify -->
+              <input type="hidden" name="form-name" value="contact">
+
+              <!-- Spam Protection -->
+              <p style="display:none;">
+                <label>Don't fill this out:
+                  <input name="bot-field">
+                </label>
+              </p>
+
               <div class="form-row">
                 <div class="form-group">
                   <label for="name" class="form-label">Full Name</label>
                   <input type="text" id="name" name="name" class="form-input" placeholder="Your name" required>
                 </div>
+
                 <div class="form-group">
                   <label for="email" class="form-label">Email Address</label>
                   <input type="email" id="email" name="email" class="form-input" placeholder="name@domain.com" required>
@@ -655,6 +666,7 @@ and automated testing across diverse applications, including web, desktop, and m
                 <div class="form-group">
                   <label for="project-type" class="form-label">Project Type</label>
                   <select id="project-type" name="project-type" class="form-input" required>
+
                     <option value="" disabled selected hidden>Select Type</option>
                     <option value="New Project">New Project</option>
                     <option value="Ongoing Project">Ongoing Project</option>
@@ -666,9 +678,11 @@ and automated testing across diverse applications, including web, desktop, and m
                     <option value="Other">Other</option>
                   </select>
                 </div>
+
                 <div class="form-group">
                   <label for="technology" class="form-label">Technology / Platform</label>
                   <select id="technology" name="technology" class="form-input" required>
+
                     <option value="" disabled selected hidden>Select Technology</option>
                     <option value="Website">Website</option>
                     <option value="Mobile App">Mobile App</option>
@@ -685,7 +699,10 @@ and automated testing across diverse applications, including web, desktop, and m
                   required></textarea>
               </div>
 
-              <button type="submit" class="btn btn-primary" style="width: 100%; border: none;">Send Message</button>
+              <button type="submit" class="btn btn-primary" style="width:100%;border:none;">
+                Send Message
+              </button>
+
             </form>
           </div>
         </div>
